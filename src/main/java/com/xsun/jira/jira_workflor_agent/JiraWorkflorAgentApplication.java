@@ -1,6 +1,6 @@
-package com.ovopark.jira.jira_workflor_agent;
+package com.xsun.jira.jira_workflor_agent;
 
-import com.ovopark.jira.jira_workflor_agent.service.WorklogService;
+import com.xsun.jira.jira_workflor_agent.service.WorklogService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;

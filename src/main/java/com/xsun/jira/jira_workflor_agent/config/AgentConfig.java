@@ -1,9 +1,9 @@
-package com.ovopark.jira.jira_workflor_agent.config;
+package com.xsun.jira.jira_workflor_agent.config;
 
-import com.ovopark.jira.jira_workflor_agent.service.WorklogAgent;
-import com.ovopark.jira.jira_workflor_agent.tools.DateTimeTools;
-import com.ovopark.jira.jira_workflor_agent.tools.GitTools;
-import com.ovopark.jira.jira_workflor_agent.tools.JiraTools;
+import com.xsun.jira.jira_workflor_agent.service.WorklogAgent;
+import com.xsun.jira.jira_workflor_agent.tools.DateTimeTools;
+import com.xsun.jira.jira_workflor_agent.tools.GitTools;
+import com.xsun.jira.jira_workflor_agent.tools.JiraTools;
 import dev.langchain4j.memory.chat.MessageWindowChatMemory;
 import dev.langchain4j.model.chat.ChatLanguageModel;
 import dev.langchain4j.model.openai.OpenAiChatModel;

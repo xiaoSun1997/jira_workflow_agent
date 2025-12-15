@@ -1,4 +1,4 @@
-package com.ovopark.jira.jira_workflor_agent.tools;
+package com.xsun.jira.jira_workflor_agent.tools;
 
 import dev.langchain4j.agent.tool.Tool;
 import lombok.extern.slf4j.Slf4j;

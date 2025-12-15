@@ -1,4 +1,4 @@
-package com.ovopark.jira.jira_workflor_agent.config;
+package com.xsun.jira.jira_workflor_agent.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

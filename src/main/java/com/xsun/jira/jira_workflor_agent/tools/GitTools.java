@@ -1,7 +1,7 @@
-package com.ovopark.jira.jira_workflor_agent.tools;
+package com.xsun.jira.jira_workflor_agent.tools;
 
-import com.ovopark.jira.jira_workflor_agent.config.GitConfig;
-import com.ovopark.jira.jira_workflor_agent.model.dto.GitCommit;
+import com.xsun.jira.jira_workflor_agent.config.GitConfig;
+import com.xsun.jira.jira_workflor_agent.model.dto.GitCommit;
 import dev.langchain4j.agent.tool.Tool;
 import lombok.extern.slf4j.Slf4j;
 import org.eclipse.jgit.api.Git;

@@ -1,4 +1,4 @@
-package com.ovopark.jira.jira_workflor_agent.tools;
+package com.xsun.jira.jira_workflor_agent.tools;
 
 import ai.djl.util.JsonUtils;
 import com.atlassian.jira.rest.client.api.JiraRestClient;
@@ -8,8 +8,8 @@ import com.atlassian.jira.rest.client.api.domain.input.WorklogInput;
 import com.atlassian.jira.rest.client.api.domain.input.WorklogInputBuilder;
 import com.atlassian.jira.rest.client.internal.async.AsynchronousJiraRestClientFactory;
 import com.google.gson.JsonNull;
-import com.ovopark.jira.jira_workflor_agent.model.dto.JiraIssue;
-import com.ovopark.jira.jira_workflor_agent.model.dto.WorklogEntry;
+import com.xsun.jira.jira_workflor_agent.model.dto.JiraIssue;
+import com.xsun.jira.jira_workflor_agent.model.dto.WorklogEntry;
 import dev.langchain4j.agent.tool.Tool;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

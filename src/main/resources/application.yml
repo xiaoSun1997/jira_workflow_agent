@@ -8,7 +8,7 @@ jira:
 git:
   repositories:
     # 仓库地址
-    - url: https://gitlab.ovopark.com/***
+    - url: https://gitlab.xsun.com/***
       #      密码
       token: xxx
       #      统计分支

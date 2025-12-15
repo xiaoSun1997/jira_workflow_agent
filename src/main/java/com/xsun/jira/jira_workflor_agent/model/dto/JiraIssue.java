@@ -1,4 +1,4 @@
-package com.ovopark.jira.jira_workflor_agent.model.dto;
+package com.xsun.jira.jira_workflor_agent.model.dto;
 
 
 import lombok.Getter;

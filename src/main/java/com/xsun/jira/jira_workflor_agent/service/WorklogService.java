@@ -1,4 +1,4 @@
-package com.ovopark.jira.jira_workflor_agent.service;
+package com.xsun.jira.jira_workflor_agent.service;
 
 
 import lombok.RequiredArgsConstructor;

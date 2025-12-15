@@ -25,7 +25,7 @@
 ## 项目结构
 
 ```
-src/main/java/com/ovopark/jira/jira_workflor_agent/
+src/main/java/com/xsun/jira/jira_workflor_agent/
 ├── JiraWorkflorAgentApplication.java  // 应用入口类
 ├── config/
 │   ├── AgentConfig.java               // AI Agent 配置类
@@ -52,9 +52,9 @@ src/main/java/com/ovopark/jira/jira_workflor_agent/
 类名：JiraWorkflorAgentApplication.java
 
 ```java
-package com.ovopark.jira.jira_workflor_agent;
+package com.xsun.jira.jira_workflor_agent;
 
-import com.ovopark.jira.jira_workflor_agent.service.WorklogService;
+import com.xsun.jira.jira_workflor_agent.service.WorklogService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
@@ -85,12 +85,12 @@ public class JiraWorkflorAgentApplication implements CommandLineRunner {
 类名：AgentConfig.java
 
 ```java
-package com.ovopark.jira.jira_workflor_agent.config;
+package com.xsun.jira.jira_workflor_agent.config;
 
-import com.ovopark.jira.jira_workflor_agent.service.WorklogAgent;
-import com.ovopark.jira.jira_workflor_agent.tools.DateTimeTools;
-import com.ovopark.jira.jira_workflor_agent.tools.GitTools;
-import com.ovopark.jira.jira_workflor_agent.tools.JiraTools;
+import com.xsun.jira.jira_workflor_agent.service.WorklogAgent;
+import com.xsun.jira.jira_workflor_agent.tools.DateTimeTools;
+import com.xsun.jira.jira_workflor_agent.tools.GitTools;
+import com.xsun.jira.jira_workflor_agent.tools.JiraTools;
 import dev.langchain4j.memory.chat.MessageWindowChatMemory;
 import dev.langchain4j.model.chat.ChatLanguageModel;
 import dev.langchain4j.model.openai.OpenAiChatModel;
@@ -152,7 +152,7 @@ public class AgentConfig {
 类名：WorklogAgent.java
 
 ```java
-package com.ovopark.jira.jira_workflor_agent.service;
+package com.xsun.jira.jira_workflor_agent.service;
 
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
@@ -189,10 +189,10 @@ public interface WorklogAgent {
 类名：GitTools.java
 
 ```java
-package com.ovopark.jira.jira_workflor_agent.tools;
+package com.xsun.jira.jira_workflor_agent.tools;
 
-import com.ovopark.jira.jira_workflor_agent.config.GitConfig;
-import com.ovopark.jira.jira_workflor_agent.model.dto.GitCommit;
+import com.xsun.jira.jira_workflor_agent.config.GitConfig;
+import com.xsun.jira.jira_workflor_agent.model.dto.GitCommit;
 import dev.langchain4j.agent.tool.Tool;
 import lombok.extern.slf4j.Slf4j;
 import org.eclipse.jgit.api.Git;
@@ -308,7 +308,7 @@ public class GitTools {
 类名：JiraTools.java
 
 ```java
-package com.ovopark.jira.jira_workflor_agent.tools;
+package com.xsun.jira.jira_workflor_agent.tools;
 
 import ai.djl.util.JsonUtils;
 import com.atlassian.jira.rest.client.api.JiraRestClient;
@@ -318,8 +318,8 @@ import com.atlassian.jira.rest.client.api.domain.input.WorklogInput;
 import com.atlassian.jira.rest.client.api.domain.input.WorklogInputBuilder;
 import com.atlassian.jira.rest.client.internal.async.AsynchronousJiraRestClientFactory;
 import com.google.gson.JsonNull;
-import com.ovopark.jira.jira_workflor_agent.model.dto.JiraIssue;
-import com.ovopark.jira.jira_workflor_agent.model.dto.WorklogEntry;
+import com.xsun.jira.jira_workflor_agent.model.dto.JiraIssue;
+import com.xsun.jira.jira_workflor_agent.model.dto.WorklogEntry;
 import dev.langchain4j.agent.tool.Tool;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -498,7 +498,7 @@ public class JiraTools {
 类名：GitCommit.java
 
 ```java
-package com.ovopark.jira.jira_workflor_agent.model.dto;
+package com.xsun.jira.jira_workflor_agent.model.dto;
 
 
 import lombok.Getter;
@@ -531,7 +531,7 @@ public class GitCommit {
 类名：JiraIssue.java
 
 ```java
-package com.ovopark.jira.jira_workflor_agent.model.dto;
+package com.xsun.jira.jira_workflor_agent.model.dto;
 
 
 import lombok.Getter;
@@ -562,7 +562,7 @@ public class JiraIssue {
 类名：WorklogEntry.java
 
 ```java
-package com.ovopark.jira.jira_workflor_agent.model.dto;
+package com.xsun.jira.jira_workflor_agent.model.dto;
 
 
 import lombok.Getter;
@@ -607,7 +607,7 @@ jira:
 git:
   repositories:
     # 仓库地址
-    - url: https://gitlab.ovopark.com/***
+    - url: https://gitlab.xsun.com/***
       #      密码
       token: xxx
       #      统计分支

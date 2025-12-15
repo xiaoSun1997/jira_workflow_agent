@@ -1,6 +1,6 @@
-package com.ovopark.jira.jira_workflor_agent.controller;
+package com.xsun.jira.jira_workflor_agent.controller;
 
-import com.ovopark.jira.jira_workflor_agent.service.WorklogService;
+import com.xsun.jira.jira_workflor_agent.service.WorklogService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

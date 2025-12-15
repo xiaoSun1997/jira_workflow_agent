@@ -8,7 +8,7 @@
         <version>3.2.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.ovopark.jira</groupId>
+    <groupId>com.xsun.jira</groupId>
     <artifactId>jira_workflor_agent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>jira_workflor_agent</name>
