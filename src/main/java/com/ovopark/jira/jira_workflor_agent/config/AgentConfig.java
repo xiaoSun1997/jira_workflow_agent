@@ -19,7 +19,7 @@ import java.time.Duration;
  * @program: AgentConfig.java
  * @description:
  * @author: sunmouren
- * @create: 2025-12-15
+ * @create: 2025-12-14
  **/
 @Configuration
 @RequiredArgsConstructor
