@@ -1,0 +1,32 @@
+jira:
+  url: http://jira***
+  #  用户名
+  username: xxx
+  #  密码
+  api-token: xxx
+
+git:
+  repositories:
+    # 仓库地址
+    - url: https://gitlab.ovopark.com/***
+      #      密码
+      token: xxx
+      #      统计分支
+      branch: xxx
+  #      账号
+  username: xxx
+
+# 相关ai的key等
+openai:
+  api-key: sk-YOUR-API-KEY
+  model: qwen-plus
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+
+# 每天需要填写时长
+work-hours:
+  monday: 8.0
+  tuesday: 10.0
+  wednesday: 8.0
+  thursday: 10.0
+  friday: 8.0
+  minimum-unit: 0.5  # 最小时间单位（小时）
