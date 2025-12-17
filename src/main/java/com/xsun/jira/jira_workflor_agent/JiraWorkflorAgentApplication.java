@@ -15,6 +15,8 @@ import org.springframework.scheduling.annotation.Scheduled;
 @RequiredArgsConstructor
 public class JiraWorkflorAgentApplication implements CommandLineRunner {
 
+    private final WorklogService WorklogService;
+
     public static void main(String[] args) {
         SpringApplication.run(JiraWorkflorAgentApplication.class, args);
     }
@@ -22,5 +24,12 @@ public class JiraWorkflorAgentApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         log.info("工作日志Agent启动成功");
+    }
+
+
+    @Scheduled(cron = "0 20 17 * * ?")
+    public void run() {
+        log.info("=====开始执行工作日志任务======");
+        WorklogService.chatWithAgent("填写完今天的jira");
     }
 }

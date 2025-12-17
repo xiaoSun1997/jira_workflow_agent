@@ -46,6 +46,8 @@ public class AgentConfig {
                 .baseUrl(baseUrl)
                 .temperature(0.5)
                 .timeout(Duration.ofSeconds(60))
+                .logRequests(true)
+                .logResponses(true)
                 .build();
     }
 
@@ -53,7 +55,7 @@ public class AgentConfig {
     public WorklogAgent worklogAgent(ChatLanguageModel chatLanguageModel) {
         return AiServices.builder(WorklogAgent.class)
                 .chatLanguageModel(chatLanguageModel)
-                .chatMemory(MessageWindowChatMemory.withMaxMessages(10))
+                .chatMemory(MessageWindowChatMemory.withMaxMessages(20))
                 .tools(jiraTools, gitTools, dateTimeTools)
                 .build();
     }
